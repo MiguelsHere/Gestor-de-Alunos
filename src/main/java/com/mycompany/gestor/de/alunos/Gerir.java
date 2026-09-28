@@ -70,6 +70,11 @@ public class Gerir extends javax.swing.JFrame {
         btnGerirDisciplinas.setText("Gerir Disciplinas");
 
         btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Criado por Jhonatas M© ");
@@ -111,6 +116,15 @@ public class Gerir extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+       
+        Inicio janelaI = new Inicio();
+        janelaI.setLocationRelativeTo(this);
+        janelaI.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments

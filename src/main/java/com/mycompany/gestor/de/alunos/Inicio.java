@@ -5,6 +5,7 @@
 package com.mycompany.gestor.de.alunos;
 
 
+
 public class Inicio extends javax.swing.JFrame {
 
     /**
@@ -39,6 +40,11 @@ public class Inicio extends javax.swing.JFrame {
         btnCriar.setText("Criar Turma");
 
         btnGerir.setText("Gerir Turmas");
+        btnGerir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGerirActionPerformed(evt);
+            }
+        });
 
         cbAno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
@@ -91,6 +97,14 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGerirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGerirActionPerformed
+        Gerir janelaG = new Gerir();
+        janelaG.setLocationRelativeTo(this);
+        janelaG.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_btnGerirActionPerformed
 
     /**
      * @param args the command line arguments

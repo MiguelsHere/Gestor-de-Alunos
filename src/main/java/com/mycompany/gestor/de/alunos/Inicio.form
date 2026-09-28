@@ -92,6 +92,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Gerir Turmas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGerirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JComboBox" name="cbAno">
       <Properties>
