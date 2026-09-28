@@ -4,6 +4,9 @@
  */
 package com.mycompany.gestor.de.alunos;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 /**
  *
  * @author F40632
