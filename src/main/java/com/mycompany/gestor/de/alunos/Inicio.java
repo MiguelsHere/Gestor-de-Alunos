@@ -4,10 +4,7 @@
  */
 package com.mycompany.gestor.de.alunos;
 
-/**
- *
- * @author F40632
- */
+
 public class Inicio extends javax.swing.JFrame {
 
     /**

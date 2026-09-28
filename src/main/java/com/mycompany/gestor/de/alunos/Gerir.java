@@ -4,6 +4,9 @@
  */
 package com.mycompany.gestor.de.alunos;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 /**
  *
  * @author F40632
@@ -15,6 +18,11 @@ public class Gerir extends javax.swing.JPanel {
      */
     public Gerir() {
         initComponents();
+        try(Connection conn = Conexao.Ligacao()){
+            
+        }catch(SQLException e){
+            
+        }
     }
 
     /**
