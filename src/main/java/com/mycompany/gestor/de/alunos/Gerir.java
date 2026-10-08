@@ -66,6 +66,11 @@ public class Gerir extends javax.swing.JFrame {
         jLabel1.setText("Gerir Turmas");
 
         btnGerirAlunos.setText("Gerir Alunos");
+        btnGerirAlunos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGerirAlunosActionPerformed(evt);
+            }
+        });
 
         btnGerirDisciplinas.setText("Gerir Disciplinas");
 
@@ -125,6 +130,10 @@ public class Gerir extends javax.swing.JFrame {
         
         this.dispose();
     }//GEN-LAST:event_btnVoltarActionPerformed
+
+    private void btnGerirAlunosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGerirAlunosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGerirAlunosActionPerformed
 
     /**
      * @param args the command line arguments
